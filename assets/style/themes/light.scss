@@ -1,0 +1,30 @@
+html.light {
+  --main-color: #FDFDFD;
+  --text-color: #414141;
+  --inverted: #16161D;
+  --muted: #656567;
+
+  --pinky: #FF4066;
+  --sunny: #FFF16A;
+
+  --primary: 153, 27, 27;
+
+}
+
+.card {
+
+  background: rgba( 255, 255, 255, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba(153, 27, 27, 0.5);
+  backdrop-filter: blur( 18px );
+  -webkit-backdrop-filter: blur( 18px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  // transition: transform 0.25s;
+}
+
+.btn-front {
+  transition: transform 0.3s ease; /* Ajoute une transition pour un effet en douceur */
+}
+
+.btn-front:hover {
+  transform: scale(1.03); /* Grossit légèrement la carte au survol */
+}
