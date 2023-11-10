@@ -21,24 +21,15 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   build: {
-    transpile: ["@heroicons/vue"]
+    transpile: ["@heroicons/vue"],
   },
 
-  modules: [
-    "nuxt-headlessui",
-    "@vueuse/nuxt",
-    "@nuxtjs/i18n",
-    "@pinia/nuxt",
-    "nuxt-mailer",
-    "@nuxthq/ui",
-    "@nuxtjs/robots",
-    "nuxt-svgo"
-  ],
+  modules: ["nuxt-headlessui", "@vueuse/nuxt", "@nuxtjs/i18n", "@pinia/nuxt", "nuxt-mailer", "@nuxthq/ui", "@nuxtjs/robots", "nuxt-svgo"],
 
   colorMode: {
-    preference: 'light',
-    fallback: 'light',
-    storageKey: 'nuxt-starter-color-mode',
+    preference: "light",
+    fallback: "light",
+    storageKey: "nuxt-starter-color-mode",
   },
 
   i18n: {
@@ -46,19 +37,19 @@ export default defineNuxtConfig({
       alwaysRedirect: true,
       useCookie: true,
       cookieKey: "i18n_redirected",
-      redirectOn: 'root',
+      redirectOn: "root",
     },
     locales: [
       {
-        code: 'en',
-        iso: 'en-US'
+        code: "en",
+        iso: "en-US",
       },
       {
-        code: 'fr',
-        iso: 'fr-FR'
-      }
+        code: "fr",
+        iso: "fr-FR",
+      },
     ],
-    baseUrl: 'https://nuxt-starter.fr',
+    baseUrl: "https://nuxt-starter.fr",
     vueI18n: {
       legacy: false,
       locale: "en",
@@ -69,12 +60,11 @@ export default defineNuxtConfig({
   },
 
   robots: {
-    UserAgent: '*',
-    Disallow: ''
+    UserAgent: "*",
+    Disallow: "",
   },
 
   svgo: {
     autoImportPath: "./assets/logo/",
   },
-
 });

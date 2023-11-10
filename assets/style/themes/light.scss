@@ -12,7 +12,6 @@ html.light {
 }
 
 .card {
-
   background: rgba( 255, 255, 255, 0.15 );
   box-shadow: 0 8px 32px 0 rgba(153, 27, 27, 0.5);
   backdrop-filter: blur( 18px );
@@ -20,6 +19,7 @@ html.light {
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   // transition: transform 0.25s;
 }
+
 
 .btn-front {
   transition: transform 0.3s ease; /* Ajoute une transition pour un effet en douceur */

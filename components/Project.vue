@@ -1,17 +1,15 @@
 <script setup lang="ts">
-defineProps(
-    {
-        item: {
-            type: Object as PropType<{
-                name: string
-                description: string
-                image: string
-                link: string
-            }>,
-            required: true,
-        },
-    }
-)
+defineProps({
+  item: {
+    type: Object as PropType<{
+      name: string;
+      description: string;
+      image: string;
+      link: string;
+    }>,
+    required: true,
+  },
+});
 </script>
 
 <template>
@@ -20,6 +18,4 @@ defineProps(
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

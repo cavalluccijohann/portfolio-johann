@@ -3,9 +3,9 @@ const { appName } = useAppConfig();
 useHead({
   title: appName,
   meta: [
-    {name: "viewport", content: "width=device-width, initial-scale=1"},
-    {name: "keywords", content: "Home"},
-    {name: "description", content: "Nuxt Starter"}
+    { name: "viewport", content: "width=device-width, initial-scale=1" },
+    { name: "keywords", content: "Home" },
+    { name: "description", content: "Nuxt Starter" },
   ],
   link: [
     {
@@ -19,15 +19,15 @@ useHead({
 
 <template>
   <Html :lang="$i18n.locale">
-  <Body class="">
-  <div class="noise"></div>
-  <ul class="circles z-1">
-    <li></li>
-    <li></li>
-  </ul>
-  <NuxtLayout>
-    <NuxtPage class="overflow-y-scroll"/>
-  </NuxtLayout>
-  </Body>
+    <Body class="">
+      <div class="noise z-1"></div>
+      <ul class="circles z-1">
+        <li></li>
+        <li></li>
+      </ul>
+      <NuxtLayout>
+        <NuxtPage class="overflow-y-scroll" />
+      </NuxtLayout>
+    </Body>
   </Html>
 </template>

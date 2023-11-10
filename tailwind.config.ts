@@ -1,32 +1,33 @@
 /** @type {import('tailwindcss').Config} */
 
 function withOpacity(variableName) {
-    return ({ opacityValue }) => {
-        if (opacityValue !== undefined) {
-            return `rgba(var(${variableName}), ${opacityValue})`;
-        }
-        return `rgb(var(${variableName}))`;
-    };
+  return ({ opacityValue }) => {
+    if (opacityValue !== undefined) {
+      return `rgba(var(${variableName}), ${opacityValue})`;
+    }
+    return `rgb(var(${variableName}))`;
+  };
 }
 
 module.exports = {
-    content: [
-        "./components/**/*.{js,vue,ts}",
-        "./layouts/**/*.vue",
-        "./pages/**/*.vue",
-        "./plugins/**/*.{js,ts}",
-        "./nuxt.config.{js,ts}",
-        "./app.vue",
-        "./error.vue",
-    ],
-    theme: {
-        extend: {
-            colors: {
-                "text-color": "#414141",
-                "neutral-color": "#414141",
-                "primary-color": withOpacity("--primary"),
-                inverted: "var(--inverted)"
-            }
-        }
+  content: [
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./nuxt.config.{js,ts}",
+    "./app.vue",
+    "./error.vue",
+    "./**/*.svg",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        "text-color": "#414141",
+        "neutral-color": "#414141",
+        "primary-color": withOpacity("--primary"),
+        inverted: "var(--inverted)",
+      },
     },
-}
+  },
+};
