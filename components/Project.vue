@@ -14,10 +14,9 @@ defineProps({
 </script>
 
 <template>
-  <div class="w-1/3 card rounded-lg p-2 relative group">
-    <div class="w-20 h-20 rounded-full bg-sunny-color absolute hidden group-hover:block" ref="circle"></div>
+  <NuxtLink :to="item.link" class="w-1/3 card rounded-lg p-2 relative group">
     <img :src="item.image" :alt="item.name" class="w-full rounded-lg" />
-  </div>
+  </NuxtLink>
 </template>
 
 <style scoped></style>

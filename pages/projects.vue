@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 import Project from "~/components/Project.vue";
 
 const projectArray = [
@@ -7,21 +6,21 @@ const projectArray = [
     name: "Nuxt Starter",
     description: "A Nuxt starter template with TailwindCSS, TypeScript, i18n, and more.",
     image: "/assets/helpr.png",
-    link: "https://www.helpr.tech/"
+    link: "https://www.helpr.tech/",
   },
   {
     name: "Nuxt Starter",
     description: "A Nuxt starter template with TailwindCSS, TypeScript, i18n, and more.",
-    image: "/assets/helpr.png",
-    link: "https://www.helpr.tech/"
+    image: "/assets/currencia.png",
+    link: "https://currencia.hrcd.fr/",
   },
   {
     name: "Nuxt Starter",
     description: "A Nuxt starter template with TailwindCSS, TypeScript, i18n, and more.",
-    image: "/assets/helpr.png",
-    link: "https://www.helpr.tech/"
-  }
-]
+    image: "/assets/mockline.png",
+    link: "https://www.mockline.dev/",
+  },
+];
 
 definePageMeta({
   title: "Projects",
@@ -30,24 +29,15 @@ definePageMeta({
   description: "Projects page",
   keywords: "Projects by Johann Cavallucci",
 });
-
 </script>
 
 <template>
   <div class="pt-24 place-items-center z-9">
     <h1 class="acorn p-5 font-bold text-5xl text-red-800 text-center">My Projects</h1>
-    <div class="grid grid-cols-2 mx-auto p-2 max-w-4xl place-items-center">
-      <Project
-          v-for="project in projectArray"
-          :key="project.name"
-          :item="project"
-          class="w-11/12 p-4 cursor-pointer btn-front mt-8"
-      />
+    <div class="grid grid-cols-2 mx-auto p-2 max-w-4xl place-items-center pb-24">
+      <Project v-for="project in projectArray" :key="project.name" :item="project" class="w-11/12 p-4 cursor-pointer btn-front mt-8" />
     </div>
   </div>
-
 </template>
 
-
-<style scoped>
-</style>
+<style scoped></style>
