@@ -33,7 +33,8 @@ definePageMeta({
 
 <template>
   <div class="pt-24 place-items-center z-9">
-    <h1 class="acorn p-5 font-bold text-5xl text-red-800 text-center">My Projects</h1>
+    <h1 class="acorn p-5 font-bold text-5xl text-red-800 text-center">Mes Projets</h1>
+    <h3 class="text-neutral-color font-medium text-center z-9">Une liste de projets sur lesquels j'ai travaillé</h3>
     <div class="grid grid-cols-2 mx-auto p-2 max-w-4xl place-items-center pb-24">
       <Project v-for="project in projectArray" :key="project.name" :item="project" class="w-11/12 p-4 cursor-pointer btn-front mt-8" />
     </div>

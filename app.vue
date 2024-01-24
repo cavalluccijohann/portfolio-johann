@@ -20,8 +20,8 @@ useHead({
 <template>
   <Html :lang="$i18n.locale">
     <Body class="">
-      <div class="noise z-1"></div>
-      <ul class="circles z-1">
+      <div class="noise z-bg"></div>
+      <ul class="circles z-circle">
         <li></li>
         <li></li>
       </ul>
