@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ref } from "vue";
 defineProps({
   item: {
     type: Object as PropType<{
@@ -13,7 +14,8 @@ defineProps({
 </script>
 
 <template>
-  <div class="w-1/3 card rounded-lg p-2">
+  <div class="w-1/3 card rounded-lg p-2 relative group">
+    <div class="w-20 h-20 rounded-full bg-sunny-color absolute hidden group-hover:block" ref="circle"></div>
     <img :src="item.image" :alt="item.name" class="w-full rounded-lg" />
   </div>
 </template>

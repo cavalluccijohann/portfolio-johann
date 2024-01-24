@@ -26,6 +26,7 @@ module.exports = {
         "text-color": "#414141",
         "neutral-color": "#414141",
         "primary-color": withOpacity("--primary"),
+        "sunny-color": withOpacity("--sunny"),
         inverted: "var(--inverted)",
       },
     },
