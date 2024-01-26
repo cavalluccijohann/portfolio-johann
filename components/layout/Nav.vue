@@ -27,7 +27,7 @@ const items = [
 
 <template>
   <div class="absolute z-20 w-full flex items-center justify-center">
-    <div class="sticky flex items-center justify-center gap-6 sm:gap-10 my-7 z-10 rounded-full p-2 card-nav bg-opacity-50">
+    <div class="sticky flex items-center justify-center gap-6 sm:gap-10 my-7 z-10 rounded-full p-2 card-nav bg-opacity-50 backdrop-blur-2xl">
       <ItemNavBar v-for="item in items" :key="item.name" :item="item" />
     </div>
     <div>
