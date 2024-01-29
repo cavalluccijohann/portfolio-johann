@@ -12,6 +12,13 @@ export default defineNuxtConfig({
     },
   },
 
+  runtimeConfig: {
+    public: {},
+    private: {
+      resendApiKey: process.env.RESEND_API_KEY,
+    },
+  },
+
   css: ["~/assets/style/main.scss"],
 
   imports: {
