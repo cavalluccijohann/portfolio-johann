@@ -18,7 +18,7 @@ export default defineEventHandler(async (event: H3Event) => {
       <ul>
         <li>Nom & Prenom : ${name}</li>
         <li>Email : ${email}</li>
-        <li>Objet : ${phone}</li>
+        <li>Phone : ${phone}</li>
         <li>Message : ${message}</li>
       </ul>
       `,
