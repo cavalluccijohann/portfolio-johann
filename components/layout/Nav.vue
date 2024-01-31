@@ -27,34 +27,28 @@ const items = [
 
 <template>
   <div>
-    <!-- Barre de navigation pour les grands écrans -->
     <div class="hidden md:flex fixed z-20 top-7 left-1/2 transform -translate-x-1/2">
       <div class="flex items-center justify-center gap-6 sm:gap-10 rounded-full p-2 card-nav bg-opacity-50 backdrop-blur-2xl">
         <ItemNavBar v-for="item in items" :key="item.name" :item="item" />
       </div>
     </div>
 
-    <!-- Barre de navigation pour les petits écrans -->
     <div class="md:hidden fixed bottom-0 left-0 z-20 w-full">
       <div class="flex items-center justify-center gap-6 sm:gap-10 rounded-full p-2 card-nav bg-opacity-50 backdrop-blur-2xl mb-3 mx-5">
         <ItemNavBar v-for="item in items" :key="item.name" :item="item" />
       </div>
     </div>
-
-    <div class="hidden sm:block">
-      <!-- Bouton pour le mode clair/sombre -->
-      <SvgoLightDark
-        @click="$colorMode.preference === 'light' ? ($colorMode.preference = 'dark') : ($colorMode.preference = 'light')"
-        class="w-7 h-7 right-0 cursor-pointer absolute top-[2.7rem] mr-7 text-primary-color select-none"
-        :class="{
-          'rotate-180': $colorMode.preference === 'dark',
-          'rotate-0': $colorMode.preference === 'light',
-        }"
-        :fontControlled="false"
-        :alt="'Light/Dark mode'"
-        :aria-label="'Light/Dark mode'"
-      />
-    </div>
+    <SvgoLightDark
+      @click="$colorMode.preference === 'light' ? ($colorMode.preference = 'dark') : ($colorMode.preference = 'light')"
+      class="w-7 h-7 z-20 right-0 cursor-pointer absolute top-[2.7rem] mr-7 text-primary-color select-none"
+      :class="{
+        'rotate-180': $colorMode.preference === 'dark',
+        'rotate-0': $colorMode.preference === 'light',
+      }"
+      :fontControlled="false"
+      :alt="'Light/Dark mode'"
+      :aria-label="'Light/Dark mode'"
+    />
   </div>
 </template>
 
