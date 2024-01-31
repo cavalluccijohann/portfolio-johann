@@ -18,7 +18,7 @@ const form = ref({
 });
 const loading = ref(false);
 async function sendForm() {
-  loading.value = false;
+  loading.value = true;
   try {
     await useFetch("/api/sendEmail", {
       method: "POST",
