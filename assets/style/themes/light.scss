@@ -3,11 +3,11 @@ html.light {
   --text-color: #414141;
   --inverted: #16161D;
   --muted: #656567;
-
   --pinky: #FF4066;
   --sunny: 255, 241, 106;
-
+  --sunny-hex: #FFF16A;
   --primary: 153, 27, 27;
+  --primary-hex: #FF4066;
 
 }
 
@@ -60,4 +60,9 @@ html.light {
 
 .btn-front:hover {
   transform: scale(1.03); /* Grossit légèrement la carte au survol */
+}
+
+.success-toast {
+  background-color: #4CAF50;
+  color: white;
 }

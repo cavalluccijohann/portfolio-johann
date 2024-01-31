@@ -14,40 +14,61 @@ definePageMeta({
       <div class="m-5">
         <img class="rounded-full h-28 w-28 object-cover" src="/assets/johannCVL.jpeg" />
       </div>
-      <h2 class="text-center align-top tracking-wider font-bold text-5xl text-red-800 mb-5"><span class="acorn">Hello, je suis Johann Cavallucci </span></h2>
-      <h3 class="text-neutral-color font-medium w-1/2 text-center">je suis designer graphique, UX/UI designer & développeur web front-end</h3>
+      <h2 class="text-center align-top tracking-wider font-bold text-5xl text-red-800 mb-5"><span class="acorn">Hello, my name is Johann Cavallucci </span></h2>
+      <h3 class="text-neutral-color font-medium w-1/2 text-center">I'm a French developer with a passion for crafting digital</h3>
       <Social />
     </div>
   </div>
 </template>
 
 <style scoped>
-/* region Text */
-.color {
-  fill: #414141;
-  color: #414141;
-
-  opacity: 75%;
-}
-
-.text-outline {
-  //-webkit-text-fill-color: transparent;
-  //-webkit-text-stroke-color: #414141;
-  //-webkit-text-stroke-width: 1px;
-  color: transparent;
-  -webkit-text-stroke: 2px black;
-}
-
-.text-color {
-  color: #414141;
-  opacity: 75%;
-  font-family: "Montserrat", sans-serif;
-}
-
 @font-face {
   font-family: "Montserrat";
   src: url("../assets/fonts/Montserrat/Montserrat-ExtraBold.ttf");
   font-weight: bold;
 }
-/* endregion */
+
+body {
+  background-color: #1b1b1d;
+  color: #ccc;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+#template,
+#path {
+  fill: none;
+}
+#template {
+  stroke-width: 5px;
+  stroke: #444;
+}
+#path {
+  stroke: #0ae448;
+  stroke-width: 20px;
+  visibility: hidden;
+}
+#code,
+#value {
+  font-size: 2rem;
+  font-family: monospace;
+}
+#code {
+  color: #777;
+  margin: 20px;
+  position: relative;
+  visibility: hidden;
+}
+#current {
+  display: inline-block;
+  color: white;
+}
+#description {
+  max-width: 530px;
+  color: #777;
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  display: inline-block;
+  text-align: left;
+}
 </style>

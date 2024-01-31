@@ -34,7 +34,8 @@
     "openai": "^3.2.1",
     "prettier": "^2.8.8",
     "resend": "^3.1.0",
-    "sass": "^1.63.3"
+    "sass": "^1.63.3",
+    "vue-sonner": "^1.0.3"
   },
   "dependencies": {
     "@splinetool/runtime": "^1.0.34"
