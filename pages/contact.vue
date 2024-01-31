@@ -20,10 +20,10 @@ const loading = ref(false);
 async function sendForm() {
   loading.value = false;
   try {
-    /*await useFetch("/api/sendEmail", {
+    await useFetch("/api/sendEmail", {
       method: "POST",
       body: form.value,
-    });*/
+    });
     form.value = {
       name: "",
       phone: "",
