@@ -1,6 +1,7 @@
 html.light {
   --main-color: #FDFDFD;
-  --text-color: #414141;
+  // text-color rgb
+  --text-color: 65, 65, 65;
   --inverted: #16161D;
   --muted: #656567;
   --pinky: #FF4066;
@@ -16,3 +17,4 @@ html.light {
   --card-bg: rgba(111, 111, 111, 0.5);
 
 }
+

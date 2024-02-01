@@ -23,7 +23,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "color-text": "var(--text-color)",
+        "color-text": withOpacity("--text-color"),
         "neutral-color": "#414141",
         "primary-color": withOpacity("--primary"),
         "sunny-color": withOpacity("--sunny"),

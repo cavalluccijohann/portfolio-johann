@@ -66,10 +66,10 @@ async function sendForm() {
           placeholder="full name"
           v-model="form.name"
           required
-          class="relative my-1 w-3/4 lg:w-1/2 p-2 pl-10 text-neutral-color/60 m-4 rounded-lg border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent"
+          class="relative my-1 w-3/4 lg:w-1/2 p-2 pl-10 text-neutral-color/60 m-4 rounded-lg border-[1px] border-gray-300 focus:outline-none focus:ring-1 focus:ring-text-color-primary focus:border-transparent"
         />
         <span class="w-3/4 lg:w-1/2 absolute inset-y-0 flex items-center pointer-events-none px-2.5">
-          <component :is="UserCircleIcon" class="w-5 h-5 text-neutral-color/60" />
+          <component :is="UserCircleIcon" class="w-5 h-5 text-color-text/60" />
         </span>
       </div>
 
@@ -79,10 +79,10 @@ async function sendForm() {
           placeholder="your email"
           v-model="form.email"
           required
-          class="relative my-1 w-3/4 lg:w-1/2 p-2 pl-10 text-neutral-color/60 m-4 rounded-lg border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent"
+          class="relative my-1 w-3/4 lg:w-1/2 p-2 pl-10 text-neutral-color/60 m-4 rounded-lg border-[1px] border-gray-300 focus:outline-none focus:ring-1 focus:ring-text-color-primary focus:border-transparent"
         />
         <span class="w-3/4 lg:w-1/2 absolute inset-y-0 start-50 flex items-center pointer-events-none px-2.5">
-          <component :is="InboxIcon" class="w-5 h-5 text-neutral-color/60" />
+          <component :is="InboxIcon" class="w-5 h-5 text-color-text/60" />
         </span>
       </div>
 
@@ -91,10 +91,10 @@ async function sendForm() {
           type="tel"
           placeholder="your phone number"
           v-model="form.phone"
-          class="relative my-1 w-3/4 lg:w-1/2 p-2 pl-10 text-neutral-color/60 m-4 rounded-lg border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent"
+          class="relative my-1 w-3/4 lg:w-1/2 p-2 pl-10 text-neutral-color/60 m-4 rounded-lg border-[1px] border-gray-300 focus:outline-none focus:ring-1 focus:ring-text-color-primary focus:border-transparent"
         />
         <span class="w-3/4 lg:w-1/2 absolute inset-y-0 start-50 flex items-center pointer-events-none px-2.5">
-          <component :is="PhoneIcon" class="w-5 h-5 text-neutral-color/60" />
+          <component :is="PhoneIcon" class="w-5 h-5 text-color-text/60" />
         </span>
       </div>
 
@@ -104,19 +104,20 @@ async function sendForm() {
           placeholder="your message"
           v-model="form.message"
           required
-          class="relative my-1 w-3/4 lg:w-1/2 p-2 h-42 min-h-50 text-neutral-color/60 m-4 rounded-lg border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent"
+          class="relative my-1 w-3/4 lg:w-1/2 p-2 h-42 min-h-50 text-neutral-color/60 m-4 rounded-lg border-[1px] border-gray-300 focus:outline-none focus:ring-1 focus:ring-text-color-primary focus:border-transparent"
         />
       </div>
+
       <div class="relative w-full flex flex-col justify-center items-center">
         <button
           type="submit"
           :class="{ 'cursor-not-allowed': loading }"
           @click="!loading"
           :disabled="loading"
-          class="relative my-1 w-3/4 lg:w-1/2 p-2 rounded-lg bg-primary-color text-white hover:text-white/80 font-bold hover:bg-primary-color/50 transition-all duration-300 focus:outline-none focus:bg-primary-color flex items-center justify-center"
+          class="font-bold w-3/4 rounded-lg lg:w-1/2 p-2 my-1 m-4 text-base font-medium text-center inline-flex items-center justify-center text-white hover:text-white/90 shadow-sm bg-gradient-to-br relative from-sunny-color via-primary-color to-primary-color"
         >
-          <component v-if="!loading" :is="PaperAirplaneIcon" class="w-5 h-5 text-color-text mr-2" />
-          <component v-else :is="ArrowPathIcon" class="w-5 h-5 text-color-text mr-2 animate-spin" />
+          <component v-if="!loading" :is="PaperAirplaneIcon" class="w-5 h-5 text-white hover:text-white/90 mr-2" />
+          <component v-else :is="ArrowPathIcon" class="w-5 h-5 text-white mr-2 animate-spin" />
 
           {{ loading ? "" : "Send" }}
         </button>
