@@ -20,6 +20,12 @@ const projectArray = [
     image: "/assets/mockline.webp",
     link: "https://www.mockline.dev/",
   },
+  {
+    name: "Nuxt Starter",
+    description: "A Nuxt starter template with TailwindCSS, TypeScript, i18n, and more.",
+    image: "/assets/portfolio.png",
+    link: "https://johanncvl.com/",
+  },
 ];
 
 definePageMeta({
