@@ -1,20 +1,13 @@
 html.light {
-  --main-color: #FDFDFD;
-  // text-color rgb
+  --toast-color: #FDFDFD;
   --text-color: 65, 65, 65;
-  --inverted: #16161D;
-  --muted: #656567;
-  --pinky: #FF4066;
-  --sunny: 255, 241, 106;
-  --sunny-hex: #FFF16A;
+  --secondary: 255, 241, 106;
+  --secondary-hex: #FFF16A;
   --primary: 153, 27, 27;
   --primary-hex: #FF4066;
   --selection-color: rgba(255, 241, 106, 0.5);
-
   --text-color-primary: rgb(153 27 27 / 1);
   --primary-opacity: rgba(153, 27, 27, 0.5);
-
   --card-bg: rgba(111, 111, 111, 0.5);
-
 }
 

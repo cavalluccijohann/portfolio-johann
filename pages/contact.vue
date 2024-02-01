@@ -34,18 +34,18 @@ async function sendForm() {
     console.error("Error sending form:", error);
     toast.error("Error sending form", {
       style: {
-        background: "var(--main-color)",
+        background: "var(--toast-color)",
         opacity: 0.9,
-        borderColor: "var(--main-color)",
+        borderColor: "var(--toast-color)",
         color: "var(--primary-hex)",
       },
     });
   } finally {
     toast.success("Message sent successfully", {
       style: {
-        background: "var(--main-color)",
+        background: "var(--toast-color)",
         opacity: 0.9,
-        borderColor: "var(--main-color)",
+        borderColor: "var(--toast-color)",
         color: "var(--text-color)",
       },
     });
@@ -114,7 +114,7 @@ async function sendForm() {
           :class="{ 'cursor-not-allowed': loading }"
           @click="!loading"
           :disabled="loading"
-          class="font-bold w-3/4 rounded-lg lg:w-1/2 p-2 my-1 m-4 text-base font-medium text-center inline-flex items-center justify-center text-white hover:text-white/90 shadow-sm bg-gradient-to-br relative from-sunny-color via-primary-color to-primary-color"
+          class="font-bold w-3/4 rounded-lg lg:w-1/2 p-2 my-1 m-4 text-base font-medium text-center inline-flex items-center justify-center text-white hover:text-white/90 shadow-sm bg-gradient-to-br relative from-secondary-color via-primary-color to-primary-color"
         >
           <component v-if="!loading" :is="PaperAirplaneIcon" class="w-5 h-5 text-white hover:text-white/90 mr-2" />
           <component v-else :is="ArrowPathIcon" class="w-5 h-5 text-white mr-2 animate-spin" />

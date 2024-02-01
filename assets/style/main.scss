@@ -5,6 +5,8 @@
 @import "themes/dark";
 @import "themes/light";
 
+/* region Global */
+
 
 @font-face {
   font-family: 'Acorn';
@@ -21,6 +23,7 @@
   background-color: var(--selection-color)!important;
 }
 
+/* endregion */
 
 /* region Background */
 
@@ -48,7 +51,7 @@
   width: 45%;
   height: 55%;
   animation-delay: 0s;
-  background: var(--sunny-hex);
+  background: var(--secondary-hex);
   border-radius: 100%;
   filter: blur(200px);
 }
@@ -112,6 +115,7 @@
 
 /* endregion */
 
+/* region Card */
 
 .card {
   box-shadow: 0 8px 32px 0 var(--primary-opacity);
@@ -131,31 +135,12 @@
 
 .card-nav {
   border: 1px solid rgba( 255, 255, 255, 0.18 );
-  box-shadow: 0 8px 32px 0 #bebebe;
+  box-shadow: 0 8px 32px -10px #bebebe;
 }
 
 .card-contact {
   border: 1px solid rgba( 255, 255, 255, 0.18 );
-  box-shadow: 0 8px 32px 0 #bebebe;
+  box-shadow: 0 4px 32px 0 #bebebe;
 }
 
-.z-bg {
-  z-index: -1000;
-}
-
-.z-circle {
-  z-index: -100;
-}
-
-.btn-front {
-  transition: transform 0.3s ease;
-}
-
-.btn-front:hover {
-  transform: scale(1.03);
-}
-
-.success-toast {
-  background-color: #4CAF50;
-  color: white;
-}
+/* endregion */

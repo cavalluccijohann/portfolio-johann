@@ -1,17 +1,12 @@
 html.dark {
-  --main-color: #FDFDFD;
+  --toast-color: #FDFDFD;
   --text-color: 230, 230, 230;
-  --inverted: #16161D;
-  --muted: #656567;
-  --pinky: #FF4066;
-  --sunny: 127, 93, 255;
-  --sunny-hex: #7F5DFF;
+  --secondary: 127, 93, 255;
+  --secondary-hex: #7F5DFF;
   --primary: 0, 82, 204;
   --primary-hex: #0052cc;
   --selection-color: rgba(127, 93, 255, 0.5);
-
   --text-color-primary: rgb(0, 82, 204);
   --primary-opacity: rgba(0, 82, 204, 0.5);
-
   --card-bg: rgba(193, 193, 193, 0.5);
 }

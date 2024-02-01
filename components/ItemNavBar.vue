@@ -6,7 +6,7 @@ defineProps({
     type: Object as PropType<{
       name: string;
       path: string;
-      icon: any;
+      icon: never;
     }>,
     required: true,
   },
@@ -20,8 +20,8 @@ defineProps({
       class="flex items-center justify-center cursor-pointer"
       :class="[
         $route.name === item.name
-          ? 'active-icon text-primary-color/70 font-bold pt-2 pb-2 pl-4 pr-4 rounded-full card-nav-item'
-          : 'inactive-icon text-primary-color/70 font-medium pt-2 pb-2 pl-4 pr-4 rounded-full',
+          ? 'text-primary-color font-bold pt-2 pb-2 pl-4 pr-4 rounded-full card-nav-item'
+          : 'text-primary-color/70 font-medium pt-2 pb-2 pl-4 pr-4 hover:text-primary-color transition-all duration-300 border-none',
       ]"
       :aria-label="'Go to ' + item.name + ' profile'"
     >
@@ -30,14 +30,4 @@ defineProps({
   </div>
 </template>
 
-<style scoped>
-.active-icon {
-  background-color: rgba(250, 250, 250, 0.43); /* Couleur de fond pour les icônes actives */
-  transition: all 0.5s ease; /* Animation de transition */
-}
-
-.inactive-icon {
-  background-color: transparent; /* Couleur de fond pour les icônes inactives */
-  transition: all 0.5s ease; /* Animation de transition */
-}
-</style>
+<style scoped></style>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { HomeIcon, PencilIcon, UserIcon, EnvelopeIcon } from "@heroicons/vue/24/solid";
-
+const rotate180 = ref(false);
 const items = [
   {
     name: "Home",
@@ -23,6 +23,11 @@ const items = [
     icon: EnvelopeIcon,
   },
 ];
+
+const toggleColorMode = () => {
+  useColorMode().preference = useColorMode().preference === "light" ? "dark" : "light";
+  rotate180.value = !rotate180.value;
+};
 </script>
 
 <template>
@@ -39,11 +44,11 @@ const items = [
       </div>
     </div>
     <SvgoLightDark
-      @click="$colorMode.preference === 'light' ? ($colorMode.preference = 'dark') : ($colorMode.preference = 'light')"
+      @click="toggleColorMode"
       class="hidden md:block w-7 h-7 z-20 right-0 cursor-pointer absolute top-[2.7rem] mr-7 text-primary-color select-none"
       :class="{
-        'rotate-180': $colorMode.preference === 'dark',
-        'rotate-0': $colorMode.preference === 'light',
+        'animate-rotate180': $colorMode.preference === 'dark',
+        'animate-rotate0': $colorMode.preference === 'light',
       }"
       :fontControlled="false"
       :alt="'Light/Dark mode'"
@@ -52,4 +57,29 @@ const items = [
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+@keyframes rotate180 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotate0 {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-rotate180 {
+  animation: rotate180 0.3s ease-out forwards;
+}
+.animate-rotate0 {
+  animation: rotate0 0.3s ease-out forwards;
+}
+</style>

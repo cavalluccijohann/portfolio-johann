@@ -42,7 +42,12 @@ definePageMeta({
     <h1 class="acorn p-5 font-bold text-5xl text-text-color-primary text-center">My Projects</h1>
     <h3 class="text-color-text font-medium text-center z-9 px-5">Here are some of my projects ( clic on the image to see the project )</h3>
     <div class="grid md:grid-cols-2 grid-cols-1 mx-auto p-2 max-w-4xl place-items-center pb-24">
-      <Project v-for="project in projectArray" :key="project.name" :item="project" class="w-10/12 md:w-11/12 p-4 cursor-pointer btn-front mt-8" />
+      <Project
+        v-for="project in projectArray"
+        :key="project.name"
+        :item="project"
+        class="w-10/12 md:w-11/12 p-4 cursor-pointer mt-8 transform hover:scale-105 transition duration-300 ease-in-out"
+      />
     </div>
   </div>
 </template>
