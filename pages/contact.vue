@@ -57,8 +57,8 @@ async function sendForm() {
 <template>
   <div class="w-full pt-5 md:pt-24 relative">
     <Toaster position="top-left" />
-    <h1 class="acorn p-5 font-bold text-5xl text-red-800 text-center">Contact Me</h1>
-    <h3 class="text-neutral-color font-medium text-center z-9">If you want to contact me, please fill out the form below</h3>
+    <h1 class="acorn p-5 font-bold text-5xl text-text-color-primary text-center">Contact Me</h1>
+    <h3 class="text-color-text font-medium text-center z-9">If you want to contact me, please fill out the form below</h3>
     <form class="w-full flex flex-col justify-center items-center mt-5" @submit.prevent="sendForm()">
       <div class="relative w-full flex flex-col justify-center items-center">
         <input

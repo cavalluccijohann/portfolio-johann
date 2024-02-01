@@ -30,7 +30,7 @@ const socials = [
     >
       <component
         :is="social.logo"
-        class="social-item w-6 h-6 transition-all duration-300 text-neutral-color hover:text-primary-color"
+        class="social-item w-6 h-6 transition-all duration-300 text-color-text hover:text-primary-color"
         :fontControlled="false"
         :alt="social.name + ' logo'"
         :aria-label="social.name + ' logo'"

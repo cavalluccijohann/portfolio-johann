@@ -10,7 +10,7 @@ definePageMeta({
 
 <template>
   <div class="w-full pt-5 md:pt-24 relative">
-    <h1 class="acorn p-5 font-bold text-5xl text-red-800 text-center">About Me</h1>
+    <h1 class="acorn p-5 font-bold text-5xl text-text-color-primary text-center">About Me</h1>
 
     <div class="w-full flex-col justify-center items-center flex md:hidden">
       <div class="rounded-lg card-img p-3 w-8/12 m-10">
@@ -18,7 +18,7 @@ definePageMeta({
       </div>
       <div class="w-full mb-10">
         <div>
-          <h3 class="text-neutral-color font-medium text-start px-5 mb-16">
+          <h3 class="text-color-text font-medium text-start px-5 mb-16">
             I am a developer based in Nice, France.<br /><br />
             Boasting 4 years of experience in the field of computer science. My passion lies in creation, and I take great satisfaction in experimenting and
             testing new technologies. Whether collaborating within a team or contributing to project design, I am fully committed to every aspect of my work.<br /><br />
@@ -37,7 +37,7 @@ definePageMeta({
     <div class="w-full flex-row justify-between hidden md:flex">
       <div class="w-[70%] my-5 lg:my-10">
         <div>
-          <h3 class="text-neutral-color font-medium text-start px-20 lg:px-32 pt-5">
+          <h3 class="text-color-text font-medium text-start px-20 lg:px-32 pt-5">
             I am a developer based in Nice, France.<br /><br />
             Boasting 4 years of experience in the field of computer science. My passion lies in creation, and I take great satisfaction in experimenting and
             testing new technologies. Whether collaborating within a team or contributing to project design, I am fully committed to every aspect of my work.<br /><br />

@@ -23,11 +23,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "text-color": "#414141",
+        "color-text": "var(--text-color)",
         "neutral-color": "#414141",
         "primary-color": withOpacity("--primary"),
         "sunny-color": withOpacity("--sunny"),
         inverted: "var(--inverted)",
+        "text-color-primary": "var(--text-color-primary)",
       },
     },
   },

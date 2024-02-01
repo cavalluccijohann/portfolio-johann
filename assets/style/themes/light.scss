@@ -8,61 +8,11 @@ html.light {
   --sunny-hex: #FFF16A;
   --primary: 153, 27, 27;
   --primary-hex: #FF4066;
+  --selection-color: rgba(255, 241, 106, 0.5);
 
-}
+  --text-color-primary: rgb(153 27 27 / 1);
+  --primary-opacity: rgba(153, 27, 27, 0.5);
 
-.card {
-  // background: rgba( 255, 255, 255, 0.15 );
-  box-shadow: 0 8px 32px 0 rgba(153, 27, 27, 0.5);
-  // backdrop-filter: blur( 18px );
-  // -webkit-backdrop-filter: blur( 18px );
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  // transition: transform 0.25s;
-}
+  --card-bg: rgba(111, 111, 111, 0.5);
 
-.card-nav-item {
-  // background: rgba( 255, 255, 255, 0.15 );
-  box-shadow: 0 8px 32px 0 rgba(153, 27, 27, 0.5);
-  // backdrop-filter: blur( 18px );
-  // -webkit-backdrop-filter: blur( 18px );
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  // transition: transform 0.25s;
-}
-
-.card-img {
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  box-shadow: 0 8px 32px 0 rgba(111, 111, 111, 0.5);
-  border-right: none;
-}
-
-.card-nav {
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  box-shadow: 0 8px 32px 0 #bebebe;
-}
-
-.card-contact {
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    box-shadow: 0 8px 32px 0 #bebebe;
-}
-
-.z-bg {
-  z-index: -1000;
-}
-
-.z-circle {
-  z-index: -100;
-}
-
-
-.btn-front {
-  transition: transform 0.3s ease; /* Ajoute une transition pour un effet en douceur */
-}
-
-.btn-front:hover {
-  transform: scale(1.03); /* Grossit légèrement la carte au survol */
-}
-
-.success-toast {
-  background-color: #4CAF50;
-  color: white;
 }

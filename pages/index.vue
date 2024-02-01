@@ -14,8 +14,10 @@ definePageMeta({
       <div class="m-5">
         <img class="rounded-full h-28 w-28 object-cover" src="/assets/johannCVL.jpeg" />
       </div>
-      <h2 class="text-center align-top tracking-wider font-bold text-5xl text-red-800 mb-5"><span class="acorn">Hello, my name is Johann Cavallucci </span></h2>
-      <h3 class="text-neutral-color font-medium w-1/2 text-center">I'm a French developer with a passion for crafting digital</h3>
+      <h2 class="text-center align-top tracking-wider font-bold text-5xl text-text-color-primary mb-5">
+        <span class="acorn">Hello, my name is Johann Cavallucci </span>
+      </h2>
+      <h3 class="text-color-text font-medium w-1/2 text-center">I'm a French developer with a passion for crafting digital</h3>
       <Social />
     </div>
   </div>
