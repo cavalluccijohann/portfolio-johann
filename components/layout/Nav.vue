@@ -40,7 +40,7 @@ const items = [
     </div>
     <SvgoLightDark
       @click="$colorMode.preference === 'light' ? ($colorMode.preference = 'dark') : ($colorMode.preference = 'light')"
-      class="w-7 h-7 z-20 right-0 cursor-pointer absolute top-[2.7rem] mr-7 text-primary-color select-none"
+      class="hidden md:block w-7 h-7 z-20 right-0 cursor-pointer absolute top-[2.7rem] mr-7 text-primary-color select-none"
       :class="{
         'rotate-180': $colorMode.preference === 'dark',
         'rotate-0': $colorMode.preference === 'light',
