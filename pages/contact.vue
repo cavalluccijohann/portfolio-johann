@@ -37,7 +37,7 @@ async function sendForm() {
         background: "var(--toast-color)",
         opacity: 0.9,
         borderColor: "var(--toast-color)",
-        color: "var(--primary-hex)",
+        color: "var(--text-color)",
       },
     });
   } finally {
@@ -66,7 +66,7 @@ async function sendForm() {
           placeholder="full name"
           v-model="form.name"
           required
-          class="relative my-1 w-3/4 lg:w-1/2 p-2 pl-10 text-neutral-color/60 m-4 rounded-lg border-[1px] border-gray-300 focus:outline-none focus:ring-1 focus:ring-text-color-primary focus:border-transparent"
+          class="relative my-1 w-3/4 lg:w-1/2 p-2 pl-10 text-color-text/60 m-4 rounded-lg border-[1px] border-gray-300 focus:outline-none focus:ring-1 focus:ring-text-color-primary focus:border-transparent"
         />
         <span class="w-3/4 lg:w-1/2 absolute inset-y-0 flex items-center pointer-events-none px-2.5">
           <component :is="UserCircleIcon" class="w-5 h-5 text-color-text/60" />
@@ -79,7 +79,7 @@ async function sendForm() {
           placeholder="your email"
           v-model="form.email"
           required
-          class="relative my-1 w-3/4 lg:w-1/2 p-2 pl-10 text-neutral-color/60 m-4 rounded-lg border-[1px] border-gray-300 focus:outline-none focus:ring-1 focus:ring-text-color-primary focus:border-transparent"
+          class="relative my-1 w-3/4 lg:w-1/2 p-2 pl-10 text-color-text/60 m-4 rounded-lg border-[1px] border-gray-300 focus:outline-none focus:ring-1 focus:ring-text-color-primary focus:border-transparent"
         />
         <span class="w-3/4 lg:w-1/2 absolute inset-y-0 start-50 flex items-center pointer-events-none px-2.5">
           <component :is="InboxIcon" class="w-5 h-5 text-color-text/60" />
@@ -91,7 +91,7 @@ async function sendForm() {
           type="tel"
           placeholder="your phone number"
           v-model="form.phone"
-          class="relative my-1 w-3/4 lg:w-1/2 p-2 pl-10 text-neutral-color/60 m-4 rounded-lg border-[1px] border-gray-300 focus:outline-none focus:ring-1 focus:ring-text-color-primary focus:border-transparent"
+          class="relative my-1 w-3/4 lg:w-1/2 p-2 pl-10 text-color-text/60 m-4 rounded-lg border-[1px] border-gray-300 focus:outline-none focus:ring-1 focus:ring-text-color-primary focus:border-transparent"
         />
         <span class="w-3/4 lg:w-1/2 absolute inset-y-0 start-50 flex items-center pointer-events-none px-2.5">
           <component :is="PhoneIcon" class="w-5 h-5 text-color-text/60" />
@@ -104,7 +104,7 @@ async function sendForm() {
           placeholder="your message"
           v-model="form.message"
           required
-          class="relative my-1 w-3/4 lg:w-1/2 p-2 h-42 min-h-50 text-neutral-color/60 m-4 rounded-lg border-[1px] border-gray-300 focus:outline-none focus:ring-1 focus:ring-text-color-primary focus:border-transparent"
+          class="relative my-1 w-3/4 lg:w-1/2 p-2 h-42 min-h-50 text-color-text/60 m-4 rounded-lg border-[1px] border-gray-300 focus:outline-none focus:ring-1 focus:ring-text-color-primary focus:border-transparent"
         />
       </div>
 
