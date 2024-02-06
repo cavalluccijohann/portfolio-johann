@@ -28,6 +28,7 @@ const socials = [
       class="flex items-center justify-center cursor-pointer"
       :aria-label="'Go to ' + social.name + ' profile'"
     >
+      <span class="sr-only">Go to {{ social.name }} profile</span>
       <component
         :is="social.logo"
         class="social-item w-6 h-6 transition-all duration-300 text-color-text hover:text-primary-color"
