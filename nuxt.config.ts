@@ -1,5 +1,3 @@
-import messages from "./locales/messages";
-
 export default defineNuxtConfig({
   app: {
     layoutTransition: {
@@ -38,37 +36,20 @@ export default defineNuxtConfig({
     fallback: "light",
     storageKey: "nuxt-starter-color-mode",
   },
-
-  i18n: {
-    detectBrowserLanguage: {
-      alwaysRedirect: true,
-      useCookie: true,
-      cookieKey: "i18n_redirected",
-      redirectOn: "root",
-    },
-    locales: [
-      {
-        code: "en",
-        iso: "en-US",
-      },
-      {
-        code: "fr",
-        iso: "fr-FR",
-      },
-    ],
-    baseUrl: "https://nuxt-starter.fr",
-    vueI18n: {
-      legacy: false,
-      locale: "en",
-      fallbackLocale: "en",
-      availableLocales: ["en", "fr"],
-      messages: messages,
-    },
-  },
-
   robots: {
     UserAgent: "*",
     Disallow: "",
+  },
+
+  // Charge la page avant tout
+  routeRules: {
+    "/": { isr: true, prerender: true },
+  },
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ["/", "/about", "/contact", "/projects"],
+    },
   },
 
   svgo: {
