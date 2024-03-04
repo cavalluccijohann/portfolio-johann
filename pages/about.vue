@@ -14,7 +14,7 @@ definePageMeta({
 
     <div class="w-full flex-col justify-center items-center flex md:hidden">
       <div class="rounded-lg card-img p-3 w-8/12 m-10">
-        <img class="rounded-lg w-full h-fit object-cover z-20" src="/assets/johannCVL.webp" alt="picture of me" />
+        <img class="rounded-lg w-full object-cover z-20" src="/assets/johannCVL.webp" alt="picture of me" />
       </div>
       <div class="w-full mb-10">
         <div>

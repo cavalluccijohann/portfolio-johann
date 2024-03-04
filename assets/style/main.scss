@@ -80,17 +80,6 @@
   }
 }
 
-.noise {
-  width: 600%;
-  height: 600%;
-  left: -100%;
-  top: -100%;
-  background: url("/assets/noise.webp"), #D9D9D9;
-  opacity: 50%;
-  position: fixed;
-  animation: noiseFX 2s steps(6) infinite;
-}
-
 @keyframes noiseFX {
   0%,
   100% {
