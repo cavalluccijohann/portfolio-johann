@@ -57,29 +57,4 @@ const toggleColorMode = () => {
   </div>
 </template>
 
-<style scoped>
-@keyframes rotate180 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(180deg);
-  }
-}
-
-@keyframes rotate0 {
-  0% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.animate-rotate180 {
-  animation: rotate180 0.3s ease-out forwards;
-}
-.animate-rotate0 {
-  animation: rotate0 0.3s ease-out forwards;
-}
-</style>
+<style scoped></style>

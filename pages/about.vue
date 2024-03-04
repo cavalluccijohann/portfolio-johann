@@ -13,7 +13,7 @@ definePageMeta({
     <h1 class="acorn p-5 font-bold text-5xl text-text-color-primary text-center">About Me</h1>
 
     <div class="w-full flex-col justify-center items-center flex md:hidden">
-      <div class="rounded-lg card-img p-3 w-8/12 m-10">
+      <div class="rounded-lg card-img p-3 w-10/12 m-10">
         <img class="rounded-lg w-full object-cover z-20" src="/assets/johannCVL.webp" alt="picture of me" />
       </div>
       <div class="w-full mb-10">

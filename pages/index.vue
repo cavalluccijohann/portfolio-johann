@@ -6,6 +6,11 @@ definePageMeta({
   description: "Home page",
   keywords: "Home",
 });
+
+const toggleColorMode = () => {
+  useColorMode().preference = useColorMode().preference === "light" ? "dark" : "light";
+  rotate180.value = !rotate180.value;
+};
 </script>
 
 <template>
@@ -19,6 +24,17 @@ definePageMeta({
       </h2>
       <h3 class="text-color-text font-medium w-1/2 text-center">I'm a French developer with a passion for crafting digital</h3>
       <Social />
+      <SvgoLightDark
+        @click="toggleColorMode"
+        class="md:hidden w-7 h-7 z-20 cursor-pointer text-primary-color select-none mt-4"
+        :class="{
+          'animate-rotate180': $colorMode.preference === 'dark',
+          'animate-rotate0': $colorMode.preference === 'light',
+        }"
+        :fontControlled="false"
+        :alt="'Light/Dark mode'"
+        :aria-label="'Light/Dark mode'"
+      />
     </div>
   </div>
 </template>
