@@ -14,7 +14,7 @@ definePageMeta({
 
     <div class="w-full flex-col justify-center items-center flex md:hidden">
       <div class="rounded-lg card-img p-3 w-10/12 m-10">
-        <img class="rounded-lg w-full object-cover z-20" src="/assets/johannCVL.webp" alt="picture of me" />
+        <NuxtImg loading="lazy" class="rounded-lg w-full object-cover z-20" src="/assets/johannCVL.webp" alt="picture of me" />
       </div>
       <div class="w-full mb-10">
         <div>
@@ -53,7 +53,7 @@ definePageMeta({
       </div>
       <div class="w-[30%] my-10">
         <div class="rounded-bl-lg rounded-tl-lg card-img p-5 pr-0">
-          <img class="rounded-bl-lg rounded-tl-lg w-full h-fit object-cover z-20" src="/assets/johannCVL.webp" alt="picture of me" />
+          <NuxtImg loading="lazy" class="rounded-bl-lg rounded-tl-lg w-full h-fit object-cover z-20" src="/assets/johannCVL.webp" alt="picture of me" />
         </div>
       </div>
     </div>

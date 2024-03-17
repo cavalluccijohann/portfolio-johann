@@ -17,7 +17,7 @@ const toggleColorMode = () => {
   <div class="w-full overflow-hidden z-10">
     <div class="flex flex-col items-center justify-center h-screen w-full z-20">
       <div class="m-5">
-        <img class="rounded-full h-28 w-28 object-cover" src="/assets/johannCVL.webp" alt="picture of me" />
+        <NuxtImg loading="lazy" class="rounded-full h-28 w-28 object-cover" src="/assets/johannCVL.webp" alt="picture of me" />
       </div>
       <h2 class="text-center align-top tracking-wider font-bold text-5xl text-text-color-primary mb-5">
         <span class="acorn">Hello, my name is Johann Cavallucci </span>

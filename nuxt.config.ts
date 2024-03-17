@@ -29,7 +29,7 @@ export default defineNuxtConfig({
     transpile: ["@heroicons/vue"],
   },
 
-  modules: ["nuxt-headlessui", "@vueuse/nuxt", "@nuxtjs/i18n", "@pinia/nuxt", "nuxt-mailer", "@nuxthq/ui", "@nuxtjs/robots", "nuxt-svgo"],
+  modules: ["nuxt-headlessui", "@vueuse/nuxt", "@nuxtjs/i18n", "@pinia/nuxt", "nuxt-mailer", "@nuxthq/ui", "@nuxtjs/robots", "nuxt-svgo", "@nuxt/image"],
 
   colorMode: {
     preference: "light",
