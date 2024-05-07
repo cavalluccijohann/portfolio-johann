@@ -26,6 +26,12 @@ const projectArray = [
     image: "/assets/portfolio.png",
     link: "https://johanncvl.com/",
   },
+  {
+    name: "Nuxt Starter",
+    description: "A Nuxt starter template with TailwindCSS, TypeScript, i18n, and more.",
+    image: "/assets/folioMagazine.webp",
+    link: "https://folio-magazine.vercel.app/",
+  },
 ];
 
 definePageMeta({
