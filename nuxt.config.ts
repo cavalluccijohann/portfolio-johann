@@ -19,17 +19,37 @@ export default defineNuxtConfig({
 
   css: ["~/assets/style/main.scss"],
 
-  imports: {
-    dirs: ["store"],
-  },
-
   devtools: { enabled: true },
 
   build: {
     transpile: ["@heroicons/vue"],
   },
 
-  modules: ["nuxt-headlessui", "@vueuse/nuxt", "@nuxtjs/i18n", "@pinia/nuxt", "nuxt-mailer", "@nuxthq/ui", "@nuxtjs/robots", "nuxt-svgo", "@nuxt/image"],
+  i18n: {
+    strategy: "no_prefix",
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "i18n_redirected",
+      redirectOn: "root",
+    },
+    baseUrl: "/",
+    locales: ["en", "fr"],
+    defaultLocale: "en",
+    vueI18n: "~/i18n.config.ts",
+  },
+
+  modules: [
+    "nuxt-headlessui",
+    "@vueuse/nuxt",
+    "@nuxtjs/i18n",
+    "@pinia/nuxt",
+    "nuxt-mailer",
+    "@nuxthq/ui",
+    "@nuxtjs/robots",
+    "nuxt-svgo",
+    "@nuxt/image",
+    "@nuxt/content",
+  ],
 
   colorMode: {
     preference: "light",
@@ -54,5 +74,25 @@ export default defineNuxtConfig({
 
   svgo: {
     autoImportPath: "./assets/logo/",
+  },
+
+  content: {
+    documentDriven: true,
+    watch: {
+      ws: {
+        showURL: false,
+      },
+    },
+    highlight: {
+      theme: "github-dark",
+    },
+    navigation: {
+      fields: ["image", "_id"],
+    },
+    markdown: {
+      anchorLinks: false,
+    },
+    locales: ["en", "fr"],
+    defaultLocale: "en",
   },
 });

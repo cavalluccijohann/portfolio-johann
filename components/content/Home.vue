@@ -1,40 +1,20 @@
-<script setup lang="ts">
-definePageMeta({
-  title: "Home",
-  name: "Home",
-  path: "/",
-  description: "Home page",
-  keywords: "Home",
-});
-
-const toggleColorMode = () => {
-  useColorMode().preference = useColorMode().preference === "light" ? "dark" : "light";
-  rotate180.value = !rotate180.value;
-};
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div class="w-full overflow-hidden z-10">
+  <div class="w-full z-10">
     <div class="flex flex-col items-center justify-center h-screen w-full z-20">
       <div class="m-5">
         <NuxtImg loading="lazy" class="rounded-full h-28 w-28 object-cover" src="/assets/johannCVL.webp" alt="picture of me" />
       </div>
       <h2 class="text-center align-top tracking-wider font-bold text-5xl text-text-color-primary mb-5">
-        <span class="acorn">Hello, my name is Johann Cavallucci </span>
+        <span class="acorn">
+          <ContentSlot :use="$slots.hero_title" />
+        </span>
       </h2>
-      <h3 class="text-color-text font-medium w-1/2 text-center">I'm a French developer with a passion for crafting digital</h3>
+      <h3 class="text-color-text font-medium w-1/2 text-center">
+        <ContentSlot :use="$slots.hero_subtitle" />
+      </h3>
       <Social />
-      <SvgoLightDark
-        @click="toggleColorMode"
-        class="md:hidden w-7 h-7 z-20 cursor-pointer text-primary-color select-none mt-4"
-        :class="{
-          'animate-rotate180': $colorMode.preference === 'dark',
-          'animate-rotate0': $colorMode.preference === 'light',
-        }"
-        :fontControlled="false"
-        :alt="'Light/Dark mode'"
-        :aria-label="'Light/Dark mode'"
-      />
     </div>
   </div>
 </template>
@@ -42,7 +22,7 @@ const toggleColorMode = () => {
 <style scoped>
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat/Montserrat-ExtraBold.ttf");
+  src: url("../../assets/fonts/Montserrat/Montserrat-ExtraBold.ttf");
   font-weight: bold;
 }
 
@@ -57,30 +37,36 @@ body {
 #path {
   fill: none;
 }
+
 #template {
   stroke-width: 5px;
   stroke: #444;
 }
+
 #path {
   stroke: #0ae448;
   stroke-width: 20px;
   visibility: hidden;
 }
+
 #code,
 #value {
   font-size: 2rem;
   font-family: monospace;
 }
+
 #code {
   color: #777;
   margin: 20px;
   position: relative;
   visibility: hidden;
 }
+
 #current {
   display: inline-block;
   color: white;
 }
+
 #description {
   max-width: 530px;
   color: #777;

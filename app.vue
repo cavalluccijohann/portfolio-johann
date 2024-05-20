@@ -20,7 +20,7 @@ useHead({
 
 <template>
   <Html :lang="$i18n.locale">
-    <Body class="overflow-hidden w-screen">
+    <Body class="w-screen">
       <div class="noise -z-50"></div>
       <ul class="circles -z-40">
         <li></li>
