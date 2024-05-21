@@ -16,10 +16,10 @@ watch(current, (newLocale) => {
 </script>
 
 <template>
-  <div class="z-99 flex items-center gap-3 rounded-lg border border-white/10 bg-zinc-900/90 px-3 py-1 backdrop-blur-xl">
+  <div class="z-99 flex items-center gap-3 rounded-lg px-3 py-1 backdrop-blur-xl card-nav">
     <ClientOnly>
       <div v-for="locale in locales" :key="locale" class="cursor-pointer select-none" @click="$i18n.locale = locale.code">
-        <span class="font-semibold" :class="locale.code === currentLocale.code ? 'text-white' : 'text-gray-500'">
+        <span class="font-semibold" :class="locale.code === currentLocale.code ? 'text-primary-color' : 'text-primary-color/50'">
           {{ locale.code }}
         </span>
       </div>
