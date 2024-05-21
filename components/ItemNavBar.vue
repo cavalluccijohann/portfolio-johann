@@ -19,7 +19,7 @@ defineProps({
       :to="item.path"
       class="flex items-center justify-center cursor-pointer"
       :class="[
-        $route.name === item.name
+        $route.path === item.path
           ? 'text-primary-color font-bold pt-2 pb-2 pl-4 pr-4 rounded-full card-nav-item'
           : 'text-primary-color/70 font-medium pt-2 pb-2 pl-4 pr-4 hover:text-primary-color transition-all duration-300 border-none',
       ]"
