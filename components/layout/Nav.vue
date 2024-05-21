@@ -26,7 +26,6 @@ const items = [
 
 const toggleColorMode = () => {
   useColorMode().preference = useColorMode().preference === "light" ? "dark" : "light";
-  rotate180.value = !rotate180.value;
 };
 </script>
 

@@ -1,7 +1,7 @@
 <template>
-  <div class="h-screen flex flex-col">
+  <div class="flex flex-col min-h-screen scrollbar-hide">
     <LayoutNav />
     <slot />
-<!--    <LayoutFooter class="h-[100px]" />-->
+    <LayoutFooter />
   </div>
 </template>
