@@ -56,11 +56,6 @@ export default defineNuxtConfig({
   routeRules: {
     "/": { isr: true },
   },
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-    },
-  },
 
   svgo: {
     autoImportPath: "./assets/logo/",
