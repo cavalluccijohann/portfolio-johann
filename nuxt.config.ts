@@ -54,7 +54,7 @@ export default defineNuxtConfig({
 
   // Charge la page avant tout
   routeRules: {
-    "/": { isr: true, prerender: true },
+    "/": { isr: true },
   },
   nitro: {
     prerender: {
