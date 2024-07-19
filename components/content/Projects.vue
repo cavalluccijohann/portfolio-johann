@@ -23,8 +23,8 @@ const projectArray = [
   {
     name: "Nuxt Starter",
     description: "A Nuxt starter template with TailwindCSS, TypeScript, i18n, and more.",
-    image: "/assets/portfolio.png",
-    link: "https://johanncvl.com/",
+    image: "/assets/iv-patisserie.webp",
+    link: "https://ivpatisserie.com/",
   },
   {
     name: "Nuxt Starter",
