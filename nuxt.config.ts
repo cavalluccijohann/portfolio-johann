@@ -8,6 +8,27 @@ export default defineNuxtConfig({
       name: "fade",
       mode: "out-in",
     },
+    head: {
+      script: [
+        {
+          src: "https://analytics.hrcd.fr/js/script.js",
+          defer: true,
+          "data-domain": "johanncvl.com",
+        },
+      ],
+      title: "Johann Cvl",
+      meta: [
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "Johann Cvl, développeur web full-stack, basé à Nice. Développement de sites web, applications web, applications mobiles, applications desktop, et bien plus encore. Pour tout projet de développement web, contactez-moi.",
+        },
+      ],
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    },
   },
 
   runtimeConfig: {
@@ -74,5 +95,4 @@ export default defineNuxtConfig({
     defaultLocale: "en",
     vueI18n: "~/i18n.config.ts",
   },
-
 });
