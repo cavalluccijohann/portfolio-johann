@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="w-full pt-5 md:pt-24 relative">
+  <div class="w-full pt-5 md:pt-24 relative pb-14 md:pb-14">
     <h1 class="acorn p-5 font-bold text-5xl text-text-color-primary text-center">
       <ContentSlot :use="$slots.title" />
     </h1>
@@ -35,8 +35,17 @@
     </div>
 
     <div class="w-full flex-col justify-between">
-      <h3 class="acorn text-color-text text-2xl text-start px-8 md:px-20 lg:px-32 pt-5">Mes musiques du moments</h3>
+      <h3 class="acorn text-color-text text-2xl text-start px-8 md:px-20 lg:px-32 pt-5">
+        <ContentSlot :use="$slots.music" />
+      </h3>
       <MusicFavorite />
+    </div>
+
+    <div class="w-full flex-col justify-between">
+      <h3 class="acorn text-color-text text-2xl text-start px-8 md:px-20 lg:px-32 pt-5">
+        <ContentSlot :use="$slots.sentence" />
+      </h3>
+      <Sentence />
     </div>
   </div>
 </template>
