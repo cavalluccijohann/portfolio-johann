@@ -32,7 +32,7 @@ const musics = [
     <div class="overflow-x-auto px-8 md:px-32 py-10 hide-scrollbar">
       <div class="flex space-x-4">
         <NuxtLink :to="music.src" v-for="music in musics" :key="music.title" class="rounded-lg card-img p-3 flex-none w-1/2 md:w-1/3 xl:w-1/4 cursor-pointer">
-          <NuxtImg loading="lazy" class="rounded-lg w-full object-cover z-20" :src="music.cover" :alt="music.title" />
+          <NuxtImg loading="lazy" class="rounded-lg w-full object-cover z-20 opacity-90" :src="music.cover" :alt="music.title" />
           <p class="text-color-text text-md md:text-lg font-bold text-start mt-2">
             {{ music.title }}
           </p>
