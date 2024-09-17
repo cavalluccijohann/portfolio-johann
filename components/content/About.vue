@@ -33,6 +33,11 @@
         </div>
       </div>
     </div>
+
+    <div class="w-full flex-col justify-between">
+      <h3 class="acorn text-color-text text-2xl text-start px-8 md:px-20 lg:px-32 pt-5">Mes musiques du moments</h3>
+      <MusicFavorite />
+    </div>
   </div>
 </template>
 
