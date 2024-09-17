@@ -44,7 +44,7 @@ const toggleColorMode = () => {
     </div>
     <SvgoLightDark
       @click="toggleColorMode"
-      class="hidden md:block w-7 h-7 z-20 right-0 cursor-pointer absolute top-[2.7rem] mr-7 text-primary-color select-none"
+      class="hidden fixed md:block w-7 h-7 z-20 right-0 cursor-pointer top-[2.7rem] mr-7 text-primary-color select-none"
       :class="{
         'animate-rotate180': $colorMode.preference === 'dark',
         'animate-rotate0': $colorMode.preference === 'light',
