@@ -39,16 +39,11 @@ export default defineNuxtConfig({
 
   css: ["~/assets/style/main.scss"],
   devtools: { enabled: true },
-  modules: ["@nuxtjs/i18n", "@nuxthq/ui", "@nuxtjs/robots", "nuxt-svgo", "@nuxt/image", "@nuxthq/studio", "@nuxt/content", "@nuxtjs/sitemap"],
+  modules: ["@nuxtjs/i18n", "@nuxthq/ui", "@nuxtjs/robots", "nuxt-svgo", "@nuxt/image", "@nuxthq/studio", "@nuxt/content", "nuxt-simple-sitemap"],
 
-  sitemap: {
-    hostname: "https://johanncvl.com", // Remplacez par l'URL de votre site
-    routes: [
-      "/", // Assurez-vous que cette route est correcte
-      "/about",
-      "/projects",
-      "/contact",
-    ].map((route) => `https://johanncvl.com${route}`), // Préfixez les routes avec le hostname
+  site: {
+    url: "https://johanncvl.com",
+    name: "Johann's Portfolio",
   },
 
   colorMode: {
