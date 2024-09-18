@@ -55,6 +55,9 @@ export default defineNuxtConfig({
   // Charge la page avant tout
   routeRules: {
     "/": { isr: true },
+    "/about": { isr: true },
+    "/contact": { isr: true },
+    "/projects": { isr: true },
   },
 
   svgo: {
