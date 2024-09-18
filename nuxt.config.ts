@@ -41,7 +41,12 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
-  modules: ["@nuxtjs/i18n", "@nuxthq/ui", "@nuxtjs/robots", "nuxt-svgo", "@nuxt/image", "@nuxthq/studio", "@nuxt/content"],
+  modules: ["@nuxtjs/i18n", "@nuxthq/ui", "@nuxtjs/robots", "nuxt-svgo", "@nuxt/image", "@nuxthq/studio", "@nuxt/content", "@nuxtjs/sitemap"],
+
+  sitemap: {
+    hostname: "https://www.johanncvl.com",
+    routes: ["/", "/about", "/contact", "/projects"],
+  },
 
   colorMode: {
     preference: "light",
