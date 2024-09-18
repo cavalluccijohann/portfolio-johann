@@ -38,15 +38,8 @@ export default defineNuxtConfig({
   },
 
   css: ["~/assets/style/main.scss"],
-
   devtools: { enabled: true },
-
-  modules: ["@nuxtjs/i18n", "@nuxthq/ui", "@nuxtjs/robots", "nuxt-svgo", "@nuxt/image", "@nuxthq/studio", "@nuxt/content", "@nuxtjs/sitemap"],
-
-  sitemap: {
-    hostname: "https://www.johanncvl.com",
-    routes: ["/", "/about", "/contact", "/projects"],
-  },
+  modules: ["@nuxtjs/i18n", "@nuxthq/ui", "@nuxtjs/robots", "nuxt-svgo", "@nuxt/image", "@nuxthq/studio", "@nuxt/content"],
 
   colorMode: {
     preference: "light",
@@ -100,4 +93,6 @@ export default defineNuxtConfig({
     defaultLocale: "en",
     vueI18n: "~/i18n.config.ts",
   },
+
+  compatibilityDate: "2024-09-18",
 });
