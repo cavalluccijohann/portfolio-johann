@@ -39,12 +39,7 @@ export default defineNuxtConfig({
 
   css: ["~/assets/style/main.scss"],
   devtools: { enabled: true },
-  modules: ["@nuxtjs/i18n", "@nuxthq/ui", "@nuxtjs/robots", "nuxt-svgo", "@nuxt/image", "@nuxthq/studio", "@nuxt/content", "nuxt-simple-sitemap"],
-
-  site: {
-    url: "https://johanncvl.com",
-    name: "Johann's Portfolio",
-  },
+  modules: ["@nuxtjs/i18n", "@nuxthq/ui", "@nuxtjs/robots", "nuxt-svgo", "@nuxt/image", "@nuxthq/studio", "@nuxt/content"],
 
   colorMode: {
     preference: "light",
