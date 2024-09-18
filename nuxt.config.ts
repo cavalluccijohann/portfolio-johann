@@ -43,9 +43,9 @@ export default defineNuxtConfig({
 
   modules: ["@nuxtjs/i18n", "@nuxthq/ui", "@nuxtjs/robots", "nuxt-svgo", "@nuxt/image", "@nuxthq/studio", "@nuxt/content", "@nuxtjs/sitemap"],
 
-  sitemap: {
-    hostname: "https://www.johanncvl.com",
-    routes: ["/", "/about", "/contact", "/projects"],
+  site: {
+    url: "https://johanncvl.com",
+    name: "My Awesome Website",
   },
 
   colorMode: {
