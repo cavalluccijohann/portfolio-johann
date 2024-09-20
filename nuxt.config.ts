@@ -31,14 +31,14 @@ export default defineNuxtConfig({
     },
   },
 
-  site: {
+  /*  site: {
     url: "https://johanncvl.com",
     name: "Johann Cavallucci, développeur front-end basé à Nice",
     description:
       "Johann Cavallucci, développeur front-end basé à Nice. Développement de sites web, applications web, applications mobiles, applications desktop, et bien plus encore. Pour tout projet de développement web, contactez-moi.",
     defaultLocale: "fr",
     indexable: true,
-  },
+  },*/
 
   runtimeConfig: {
     private: {
@@ -47,7 +47,9 @@ export default defineNuxtConfig({
   },
 
   css: ["~/assets/style/main.scss"],
+
   devtools: { enabled: true },
+
   modules: ["@nuxtjs/i18n", "@nuxthq/ui", "@nuxtjs/robots", "nuxt-svgo", "@nuxt/image", "@nuxthq/studio", "@nuxt/content", "@nuxtjs/seo"],
 
   colorMode: {
@@ -71,6 +73,7 @@ export default defineNuxtConfig({
 
   sitemap: {
     url: "https://johanncvl.com",
+    sources: ["/api/__sitemap__/urls"],
     name: "Johann Cvl",
   },
 
