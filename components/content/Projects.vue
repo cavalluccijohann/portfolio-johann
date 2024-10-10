@@ -6,7 +6,7 @@ const projectArray = [
     name: "Nuxt Starter",
     description: "A Nuxt starter template with TailwindCSS, TypeScript, i18n, and more.",
     image: "/assets/helpr.webp",
-    link: "https://www.helpr.tech/",
+    link: "https://www.helpr.hrcd.com/",
   },
   {
     name: "Nuxt Starter",
@@ -30,7 +30,7 @@ const projectArray = [
     name: "Nuxt Starter",
     description: "A Nuxt starter template with TailwindCSS, TypeScript, i18n, and more.",
     image: "/assets/folioMagazine.webp",
-    link: "https://folio-magazine.vercel.app/",
+    link: "https://foliomagazine.johanncvl.com/",
   },
 ];
 </script>
