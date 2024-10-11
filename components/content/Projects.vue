@@ -6,7 +6,7 @@ const projectArray = [
     name: "Nuxt Starter",
     description: "A Nuxt starter template with TailwindCSS, TypeScript, i18n, and more.",
     image: "/assets/helpr.webp",
-    link: "https://www.helpr.hrcd.com/",
+    link: "https://www.helpr.hrcd.fr/",
   },
   {
     name: "Nuxt Starter",
