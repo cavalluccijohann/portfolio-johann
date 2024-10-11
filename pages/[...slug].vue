@@ -3,6 +3,7 @@ const { locale } = useI18n();
 
 useHead({
   title: "Johann's folio",
+  titleTemplate: "",
   meta: [
     { name: "viewport", content: "width=device-width, initial-scale=1" },
     { name: "keywords", content: "Portfolio Johann Cavallucci, johanncavallucci, johann cavallucci, JOHANN CAVALLUCCI" },
