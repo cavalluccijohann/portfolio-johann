@@ -46,11 +46,11 @@ export default defineNuxtConfig({
     },
   },
 
-  css: ["~/assets/style/main.scss"],
+  css: ["~/assets/style/main.css"],
 
   devtools: { enabled: true },
 
-  modules: ["@nuxtjs/i18n", "@nuxthq/ui", "@nuxtjs/robots", "nuxt-svgo", "@nuxt/image", "@nuxthq/studio", "@nuxt/content", "@nuxtjs/seo"],
+  modules: ["@nuxtjs/i18n", "@nuxthq/ui", "@nuxtjs/robots", "nuxt-svgo", "@nuxt/image", "@nuxthq/studio", "@nuxt/content", "@nuxtjs/seo", "@nuxtjs/sitemap"],
 
   colorMode: {
     preference: "light",
@@ -72,9 +72,10 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    url: "https://johanncvl.com",
-    sources: ["/api/__sitemap__/urls"],
+    url: "https://johanncvl.com/",
+    gzip: true,
     name: "Johann Cvl",
+    routes: ["/Contact", "/Projects", "/About"],
   },
 
   svgo: {

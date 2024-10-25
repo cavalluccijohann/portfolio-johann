@@ -1,25 +1,24 @@
 {
   "devDependencies": {
-    "@heroicons/vue": "^2.0.18",
-    "@nuxt/content": "^2.12.1",
-    "@nuxt/image": "^1.4.0",
-    "@nuxthq/studio": "^1.1.0",
-    "@nuxthq/ui": "^2.4.0",
-    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@heroicons/vue": "^2.1.5",
+    "@nuxt/content": "^2.13.4",
+    "@nuxt/image": "^1.8.1",
+    "@nuxthq/studio": "^1.1.2",
+    "@nuxthq/ui": "^2.7.0",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/i18n": "next",
     "@nuxtjs/robots": "^3.0.0",
-    "@nuxtjs/seo": "^2.0.0-rc.21",
-    "@types/node": "^18",
-    "eslint": "^8.40.0",
-    "eslint-config-prettier": "^8.8.0",
+    "@nuxtjs/seo": "^2.0.0-rc.23",
+    "@types/node": "^18.19.59",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^8.10.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-vue": "^9.13.0",
-    "nuxt": "^3.5.2",
-    "nuxt-svgo": "^3.4.0",
+    "eslint-plugin-vue": "^9.29.1",
+    "nuxt": "^3.13.2",
+    "nuxt-svgo": "^3.7.0",
     "prettier": "^2.8.8",
-    "resend": "^3.1.0",
-    "sass": "^1.63.3",
-    "vue-sonner": "^1.0.3"
+    "resend": "^3.5.0",
+    "vue-sonner": "^1.2.3"
   },
   "private": true,
   "scripts": {
@@ -30,5 +29,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@nuxtjs/sitemap": "^6.1.2"
+  }
 }
