@@ -72,10 +72,9 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    url: "https://johanncvl.com/",
+    hostname: "https://johanncvl.com/",
     gzip: true,
-    name: "Johann Cvl",
-    routes: ["/Contact", "/Projects", "/About"],
+    routes: ["/contact", "/projects", "/about"],
   },
 
   svgo: {
