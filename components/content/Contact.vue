@@ -59,6 +59,7 @@ async function sendForm() {
       <div class="relative w-full flex flex-col justify-center items-center">
         <input
           type="text"
+          id="name"
           :placeholder="$t('name')"
           v-model="form.name"
           required
