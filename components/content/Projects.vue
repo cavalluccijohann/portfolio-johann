@@ -18,7 +18,7 @@ const projectArray = [
     name: "Nuxt Starter",
     description: "A Nuxt starter template with TailwindCSS, TypeScript, i18n, and more.",
     image: "/assets/mockline.webp",
-    link: "https://www.mockline.dev/",
+    link: "https://mockline.hrcd.fr/",
   },
   {
     name: "Nuxt Starter",
