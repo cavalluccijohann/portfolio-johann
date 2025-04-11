@@ -3,7 +3,6 @@ defineProps({
   item: {
     type: Object as PropType<{
       name: string;
-      description: string;
       image: string;
       link: string;
     }>,
@@ -18,5 +17,3 @@ defineProps({
     <NuxtImg loading="lazy" :src="item.image" :alt="item.name" class="w-full rounded-lg" />
   </NuxtLink>
 </template>
-
-<style scoped></style>

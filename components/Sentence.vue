@@ -37,12 +37,11 @@ const sentences = [
 </template>
 
 <style scoped>
-/* Masquer la barre de défilement pour différents navigateurs */
 .hide-scrollbar::-webkit-scrollbar {
-  display: none; /* Chrome, Safari et Opera */
+  display: none;
 }
 .hide-scrollbar {
-  -ms-overflow-style: none; /* IE et Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 </style>

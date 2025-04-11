@@ -1,11 +1,8 @@
-<script setup lang="ts"></script>
-
 <template>
   <div class="w-full pt-5 md:pt-24 relative pb-14 md:pb-14">
     <h1 class="acorn p-5 font-bold text-5xl text-text-color-primary text-center">
       <ContentSlot :use="$slots.title" />
     </h1>
-
     <div class="w-full flex-col justify-center items-center flex md:hidden">
       <div class="rounded-lg card-img p-3 w-10/12 m-10">
         <NuxtImg loading="lazy" class="rounded-lg w-full object-cover z-20" src="/assets/johannCVL.webp" alt="picture of me" />
@@ -49,5 +46,3 @@
     </div>
   </div>
 </template>
-
-<style scoped></style>

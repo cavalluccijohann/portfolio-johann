@@ -3,32 +3,27 @@ import Project from "~/components/Project.vue";
 
 const projectArray = [
   {
-    name: "Nuxt Starter",
-    description: "A Nuxt starter template with TailwindCSS, TypeScript, i18n, and more.",
+    name: "Helpr",
     image: "/assets/helpr.webp",
     link: "https://helpr.hrcd.fr/",
   },
   {
-    name: "Nuxt Starter",
-    description: "A Nuxt starter template with TailwindCSS, TypeScript, i18n, and more.",
+    name: "Currencia",
     image: "/assets/currencia.webp",
     link: "https://currencia.hrcd.fr/",
   },
   {
-    name: "Nuxt Starter",
-    description: "A Nuxt starter template with TailwindCSS, TypeScript, i18n, and more.",
+    name: "Mockline",
     image: "/assets/mockline.webp",
     link: "https://mockline.hrcd.fr/",
   },
   {
-    name: "Nuxt Starter",
-    description: "A Nuxt starter template with TailwindCSS, TypeScript, i18n, and more.",
+    name: "IV Patisserie",
     image: "/assets/iv-patisserie.webp",
     link: "https://ivpatisserie.com/",
   },
   {
-    name: "Nuxt Starter",
-    description: "A Nuxt starter template with TailwindCSS, TypeScript, i18n, and more.",
+    name: "Folio Magazine",
     image: "/assets/folioMagazine.webp",
     link: "https://foliomagazine.johanncvl.com/",
   },
@@ -53,5 +48,3 @@ const projectArray = [
     </div>
   </div>
 </template>
-
-<style scoped></style>

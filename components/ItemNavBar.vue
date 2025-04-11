@@ -30,5 +30,3 @@ defineProps({
     </NuxtLink>
   </div>
 </template>
-
-<style scoped></style>

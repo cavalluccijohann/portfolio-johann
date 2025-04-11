@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { HomeIcon, PencilIcon, UserIcon, EnvelopeIcon } from "@heroicons/vue/24/solid";
-const rotate180 = ref(false);
 const items = [
   {
     name: "Home",
@@ -55,5 +54,3 @@ const toggleColorMode = () => {
     />
   </div>
 </template>
-
-<style scoped></style>

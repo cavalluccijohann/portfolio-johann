@@ -13,5 +13,3 @@ const toggleColorMode = () => {
     :aria-label="'Light/Dark mode'"
   />
 </template>
-
-<style scoped></style>

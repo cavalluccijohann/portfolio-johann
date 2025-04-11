@@ -23,14 +23,11 @@ function goBack() {
       <p class="mt-6 text-base leading-7 text-gray-600">Sorry, we couldn’t find the page you’re looking for.</p>
       <div class="mt-10 flex items-center justify-center gap-x-6">
         <NuxtLink
-            @click="handleError"
-            class="rounded-md bg-accent px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-accent-hover cursor-pointer"
-        >Go back home
+          @click="handleError"
+          class="rounded-md bg-accent px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-accent-hover cursor-pointer"
+          >Go back home
         </NuxtLink>
-        <button
-            @click="goBack"
-            class="rounded-md bg-accent px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-accent-hover cursor-pointer"
-        >
+        <button @click="goBack" class="rounded-md bg-accent px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-accent-hover cursor-pointer">
           Go back
         </button>
       </div>

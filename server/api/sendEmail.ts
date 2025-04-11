@@ -1,7 +1,7 @@
 import { Resend } from "resend";
 import { H3Event } from "h3";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.resendApiKey);
 
 export default defineEventHandler(async (event: H3Event) => {
   try {
