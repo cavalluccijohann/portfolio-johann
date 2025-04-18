@@ -15,6 +15,13 @@ useHead({
     { property: 'og:image:alt', content: 'Johann Cavallucci Portfolio' },
     { property: 'og:url', content: 'https://johanncvl.com' },
     { property: 'og:type', content: 'website' },
+    { property: 'og:site_name', content: 'Johann Cavallucci Portfolio' },
+    { property: 'twitter:title', content: 'Johann Cavallucci Portfolio' },
+    { property: 'twitter:description', content: 'The portfolio of Johann Cavallucci, a web developer.' },
+    { property: 'twitter:image', content: '/og.png' },
+    { property: 'twitter:image:alt', content: 'Johann Cavallucci Portfolio' },
+    { property: 'twitter:url', content: 'https://johanncvl.com' },
+    { property: 'twitter:card', content: 'summary_large_image' },
   ],
   link: [
     {
