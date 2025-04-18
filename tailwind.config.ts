@@ -3,32 +3,28 @@
 function withOpacity(variableName) {
   return ({ opacityValue }) => {
     if (opacityValue !== undefined) {
-      return `rgba(var(${variableName}), ${opacityValue})`;
+      return `rgba(var(${variableName}), ${opacityValue})`
     }
-    return `rgb(var(${variableName}))`;
-  };
+    return `rgb(var(${variableName}))`
+  }
 }
 
 module.exports = {
   content: [
-    "./components/**/*.{js,vue,ts}",
-    "./layouts/**/*.vue",
-    "./pages/**/*.vue",
-    "./plugins/**/*.{js,ts}",
-    "./nuxt.config.{js,ts}",
-    "./app.vue",
-    "./error.vue",
-    "./**/*.svg",
+    './components/**/*.{js,vue,ts}',
+    './pages/**/*.vue',
+    './nuxt.config.{js,ts}',
+    './error.vue',
   ],
   theme: {
     extend: {
       colors: {
-        "color-text": withOpacity("--text-color"),
-        "neutral-color": "#414141",
-        "primary-color": withOpacity("--primary"),
-        "secondary-color": withOpacity("--secondary"),
-        "text-color-primary": "var(--text-color-primary)",
+        'color-text': withOpacity('--text-color'),
+        'neutral-color': '#414141',
+        'primary-color': withOpacity('--primary'),
+        'secondary-color': withOpacity('--secondary'),
+        'text-color-primary': 'var(--text-color-primary)',
       },
     },
   },
-};
+}

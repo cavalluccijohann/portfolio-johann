@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineProps, type PropType } from "vue";
+import { type PropType } from 'vue'
 
 defineProps({
   item: {
@@ -10,7 +10,7 @@ defineProps({
     }>,
     required: true,
   },
-});
+})
 </script>
 
 <template>
