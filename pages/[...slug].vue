@@ -2,13 +2,19 @@
 const { locale } = useI18n()
 
 useHead({
-  title: 'Johann\'s folio',
+  title: 'Johann Cavallucci Portfolio',
   titleTemplate: '',
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     { name: 'keywords', content: 'Portfolio Johann Cavallucci, johanncavallucci, johann cavallucci, JOHANN CAVALLUCCI' },
     { name: 'description', content: 'The portfolio of Johann Cavallucci, a web developer.' },
     { name: 'author', content: 'Johann Cavallucci' },
+    { property: 'og:title', content: 'Johann Cavallucci Portfolio' },
+    { property: 'og:description', content: 'The portfolio of Johann Cavallucci, a web developer.' },
+    { property: 'og:image', content: '/og.png' },
+    { property: 'og:image:alt', content: 'Johann Cavallucci Portfolio' },
+    { property: 'og:url', content: 'https://johanncvl.com' },
+    { property: 'og:type', content: 'website' },
   ],
   link: [
     {
